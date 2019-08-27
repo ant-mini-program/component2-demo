@@ -1,0 +1,4 @@
+<table dataSource="{{dataSource}}" fields="{{fields}}">
+    <text slot="name" style="color: red;" slot-scope="x">姓名: {{x.value.name}}</text>
+    <text slot="age" style="color: blue;" slot-scope="x">age: {{x.value.age}}</text>
+</table>

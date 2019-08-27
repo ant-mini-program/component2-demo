@@ -1,0 +1,12 @@
+<view>
+    <block a:for="{{dataSource}}" a:for-item="dataItem">
+        <view>
+            <block a:for="{{fields}}">
+                <slot name="{{item.dataIndex}}" value="{{dataItem}}">
+                    <text a:if="{{item.dataIndex === 'age'}}">age: {{dataItem.age}}</text>
+                    <text a:elif="{{item.dataIndex === 'name'}}">name: {{dataItem.name}}</text>
+                </slot>
+            </block>
+        </view>
+    </block>
+</view>

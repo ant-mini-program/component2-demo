@@ -1,0 +1,12 @@
+<import-sjs name="addOne" from="./f.sjs"/>
+
+<slot/>
+
+<view a:for="{{addOne(count)}}">
+    <slot name="slot{{item}}" >default</slot>
+</view>
+
+<view>
+    <slot name="scope" value="{{o.value}}" />
+</view>
+<button onTap="change">change scope slot value</button>

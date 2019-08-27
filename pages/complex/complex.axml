@@ -1,0 +1,7 @@
+<i1 count="{{count}}">
+    <view slot="slot{{item}}" a:for="{{count}}">{{item}}</view>
+    <view slot="scope" slot-scope="c">{{c.value}}</view>
+    count: {{count}}
+</i1>
+<button onTap="plus">count+</button>
+<button onTap="navigateTo">navigateToTablePage</button>
